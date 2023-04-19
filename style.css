@@ -182,5 +182,15 @@ body footer p {
   body #itinerary .card-container .card {
     display: flex;
     flex-direction: column;
+    padding: 1%;
+    height: 300px;
+    width: 250px;
+  }
+  body #itinerary .card-container .card img {
+    width: 40%;
+    height: 30%;
+  }
+  body #itinerary .card-container .card .card-title {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

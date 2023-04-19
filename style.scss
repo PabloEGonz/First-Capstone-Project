@@ -195,11 +195,15 @@ body {
         .card {
           display: flex;
           flex-direction: column;
+          padding: 1%;
+          height: 300px;
+          width: 250px;
           img {
-            
+            width: 40%;
+            height: 30%;
           }
           .card-title {
-
+            padding: 0;
           }
           .card-text {
             
