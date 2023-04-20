@@ -51,6 +51,18 @@ window.onload = () => {
         intro[i].innerHTML = artist[i].intro;
         cardText[i].innerHTML = artist[i].presentation;
     }
-
-
 }
+
+const toggle = document.querySelector(".see");
+
+toggle.onclick = () => {
+    console.log(toggle.innerHTML);
+    if (toggle.innerHTML === "See More") {
+        toggle.innerHTML = "See Less";
+    }
+    else {
+        toggle.innerHTML = "See More";
+    }
+}
+
+
