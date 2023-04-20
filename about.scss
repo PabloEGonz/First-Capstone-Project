@@ -3,6 +3,7 @@
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
+  scroll-behavior: smooth;
   nav {
     -webkit-box-shadow: 0px 0px 30px 3px #6a69696d;
     box-shadow: 0px 0px 30px 3px #65616163;
@@ -15,6 +16,10 @@ body {
       text-align: left;
       font-weight: 900;
       font-size: 1.5rem;
+    }
+    li:hover {
+      box-shadow: 0 4px 0 $orange;
+      transform: scale(1.2);
     }
   }
   #home {
@@ -89,6 +94,11 @@ body {
       h6 {
         font-weight: 400;
       }
+    }
+    .card:hover {
+      transform: scale(1.1);
+      -webkit-box-shadow: 0px 0px 60px 10px #6a69696d;
+      box-shadow: 0px 0px 60px 10px #65616163;
     }
     .brussels {
       background-image: url("images/brussels.jpg");

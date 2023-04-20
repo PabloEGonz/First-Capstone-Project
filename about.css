@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
+  scroll-behavior: smooth;
 }
 body nav {
   box-shadow: 0px 0px 30px 3px rgba(101, 97, 97, 0.3882352941);
@@ -14,6 +15,10 @@ body nav li {
   text-align: left;
   font-weight: 900;
   font-size: 1.5rem;
+}
+body nav li:hover {
+  box-shadow: 0 4px 0 #ec5242;
+  transform: scale(1.2);
 }
 body #home {
   padding: 8% 5% 5% 5%;
@@ -87,6 +92,10 @@ body #previous .card h2 {
 }
 body #previous .card h6 {
   font-weight: 400;
+}
+body #previous .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 60px 10px rgba(101, 97, 97, 0.3882352941);
 }
 body #previous .brussels {
   background-image: url("images/brussels.jpg");
