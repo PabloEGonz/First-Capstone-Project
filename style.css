@@ -1,5 +1,11 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sansd-serif;
+}
+body .top {
+  display: none;
+}
+body .top img {
+  height: 2px;
 }
 body nav {
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
@@ -15,7 +21,8 @@ body nav li {
   text-align: left;
 }
 body nav li:hover {
-  box-shadow: 0 4px 0 #ec5242;
+  box-shadow: 0 4px 2px -2px #ec5242;
+  transform: scale(1.1);
 }
 body #home {
   padding: 20% 5% 20% 5%;
@@ -44,6 +51,7 @@ body #home .date {
 body footer {
   height: 10vh;
   padding: 1% 3%;
+  background-color: rgba(246, 244, 244, 0.768627451);
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
@@ -59,12 +67,11 @@ body footer p {
 body #partners {
   padding: 8% 5% 5% 5%;
   text-align: center;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(222, 218, 218, 0.9137254902)), url("images/musical-bckg.jpg");
-  background-repeat: repeat;
+  background-color: rgba(39, 42, 49, 0.8901960784);
 }
 body #partners h3 {
   font-weight: 800;
-  color: #4a4848;
+  color: #d3d3d3;
 }
 body #partners img {
   margin: 2%;
@@ -175,14 +182,39 @@ body #artists a h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  body .top {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(39, 42, 49, 0.8901960784);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 15%;
+    gap: 2%;
+  }
+  body .top img {
+    height: 70%;
+  }
+  body .top a {
+    text-decoration: none;
+    color: #fff;
+  }
+  body nav {
+    margin-top: 4vh;
+    z-index: 2 !important;
+  }
   body nav .navbar-collapse {
     padding-left: 10%;
     padding-right: 15%;
   }
   body nav img {
     float: none;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
   }
   body nav li {
     font-size: 1.5rem;
@@ -305,7 +337,7 @@ body #artists a h3 {
     text-underline-offset: 7px;
   }
   body footer {
-    height: 10vh;
+    height: 20vh;
     padding: 0;
   }
   body footer p {
