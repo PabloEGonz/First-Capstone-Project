@@ -1,9 +1,4 @@
-$black: #272a31e3;
-$transparent: #ffffff1c;
-$orange: #ec5242;
-$gray: #d3d3d3;
-$dark-gray: #4a4848;
-$white: #fff;
+@import "_variables";
 
 body {
   font-family: "Lato", sans-serif;
@@ -12,20 +7,18 @@ body {
     box-shadow: 0px 0px 30px 3px #65616163;
     img {
       height: 30%;
-      width: 20%;
+      width: 30%;
       float: right;
     }
     li {
       font-weight: 900;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      text-align: left;
     }
   }
   #home {
     padding: 20% 5% 20% 5%;
-    background-image: radial-gradient(
-        rgba(255, 255, 255, 0.925),
-        rgba(255, 255, 255, 0.8)
-      ),
+    background-image: radial-gradient(#ffffffec, #ffffffcc),
       url("images/musical-bckg.jpg");
     background-repeat: repeat;
     .title {
@@ -131,9 +124,38 @@ body {
       justify-content: center;
     }
   }
+  #partners {
+    padding: $s-p;
+    text-align: center;
+    background-image: radial-gradient(#ffffffec, #dedadae9),
+      url("images/musical-bckg.jpg");
+    background-repeat: repeat;
+    h3 {
+      font-weight: 800;
+      color: $dark-gray;
+    }
+    img {
+      margin: 2%;
+    }
+    #versailles {
+      width: 60vw;
+    }
+    #europe {
+      width: 40vw;
+    }
+    #radio {
+      width: 40vw;
+    }
+    #paris {
+      width: 20vw;
+    }
+    #classique {
+      width: 30vw;
+    }
+  }
   footer {
-    height: 8vh;
-    padding: 3% 3%;
+    height: 10vh;
+    padding: 1% 3%;
     align-items: center;
     justify-content: space-around;
     -webkit-box-shadow: 0px 0px 40px 4px #6a69696d;
@@ -143,7 +165,7 @@ body {
     }
     p {
       text-align: end;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin: 0;
     }
   }
@@ -157,6 +179,8 @@ body {
       }
       img {
         float: none;
+        width: 25%;
+        height: 25%;
       }
       li {
         font-size: 1.5rem;
@@ -262,9 +286,33 @@ body {
         justify-content: center;
       }
     }
+    #partners {
+      padding: 2% 0;
+      h3 {
+        font-size: 2.5rem;
+      }
+      #versailles {
+        width: 15vw;
+      }
+      #europe {
+        width: 15vw;
+      }
+      #radio {
+        width: 13vw;
+      }
+      #paris {
+        width: 5vw;
+      }
+      #classique {
+        width: 10vw;
+      }
+    }
     footer {
       height: 10vh;
       padding: 0;
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 }
