@@ -3,6 +3,12 @@ body {
   text-align: center;
   scroll-behavior: smooth;
 }
+body .top {
+  display: none;
+}
+body .top img {
+  height: 2px;
+}
 body nav {
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
 }
@@ -17,12 +23,13 @@ body nav li {
   font-size: 1.5rem;
 }
 body nav li:hover {
-  box-shadow: 0 4px 0 #ec5242;
-  transform: scale(1.2);
+  box-shadow: 0 4px 2px -2px #ec5242;
+  transform: scale(1.1);
 }
 body footer {
   height: 10vh;
   padding: 1% 3%;
+  background-color: rgb(50, 48, 48);
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
@@ -31,6 +38,7 @@ body footer img {
   height: 100%;
 }
 body footer p {
+  color: #d3d3d3;
   text-align: end;
   font-size: 0.8rem;
   margin: 0;
@@ -126,43 +134,41 @@ body #previous .montreal {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #partners {
-  padding: 8% 5% 5% 5%;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(222, 218, 218, 0.9137254902)), url("images/musical-bckg.jpg");
-  background-repeat: repeat;
-}
-body #partners h3 {
-  font-weight: 800;
-  color: #4a4848;
-}
-body #partners img {
-  margin: 2%;
-}
-body #partners #versailles {
-  width: 60vw;
-}
-body #partners #europe {
-  width: 40vw;
-}
-body #partners #radio {
-  width: 40vw;
-}
-body #partners #paris {
-  width: 20vw;
-}
-body #partners #classique {
-  width: 30vw;
-}
 
 @media only screen and (min-width: 768px) {
+  body .top {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(39, 42, 49, 0.8901960784);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 15%;
+    gap: 2%;
+  }
+  body .top img {
+    height: 70%;
+  }
+  body .top a {
+    text-decoration: none;
+    color: #fff;
+  }
+  body nav {
+    margin-top: 4vh;
+    z-index: 2 !important;
+  }
   body nav .navbar-collapse {
     padding-left: 0;
     padding-right: 15%;
   }
   body nav img {
     float: none;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
   }
   body nav li {
     font-size: 1.5rem;
@@ -195,8 +201,11 @@ body #partners #classique {
     font-weight: 900;
   }
   body footer {
-    height: 10vh;
+    height: 25vh;
     padding: 0;
+  }
+  body footer img {
+    height: 80%;
   }
   body footer p {
     font-size: 1.2rem;
@@ -238,26 +247,5 @@ body #partners #classique {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 3%;
-  }
-  body #partners {
-    padding: 2% 0;
-  }
-  body #partners h3 {
-    font-size: 2.5rem;
-  }
-  body #partners #versailles {
-    width: 15vw;
-  }
-  body #partners #europe {
-    width: 15vw;
-  }
-  body #partners #radio {
-    width: 13vw;
-  }
-  body #partners #paris {
-    width: 5vw;
-  }
-  body #partners #classique {
-    width: 10vw;
   }
 }/*# sourceMappingURL=about.css.map */
