@@ -252,6 +252,19 @@ body {
       }
     }
 
+    footer {
+      height: 25vh;
+      padding: 0;
+
+      img {
+        height: 80%;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
     .top {
       width: 100%;
       position: fixed;
@@ -420,15 +433,6 @@ body {
           text-decoration-thickness: 1.2px;
           text-underline-offset: 7px;
         }
-      }
-    }
-
-    footer {
-      height: 20vh;
-      padding: 0;
-
-      p {
-        font-size: 1.2rem;
       }
     }
   }
