@@ -76,7 +76,7 @@ This is a website about a festival taking place in Paris, France.
 
 > You can find the video walkthrough at:
 
-- https://www.loom.com/share/b88fdbe67e554123bcbd6a73a2ade006
+- https://www.loom.com/share/44ac714f40eb495a95bbf703d36d8187
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
