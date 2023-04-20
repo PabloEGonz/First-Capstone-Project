@@ -1,0 +1,314 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+body nav {
+  box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
+}
+body nav img {
+  height: 30%;
+  width: 30%;
+  float: right;
+}
+body nav li {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: left;
+}
+body nav li:hover {
+  box-shadow: 0 4px 0 #ec5242;
+}
+body #home {
+  padding: 20% 5% 20% 5%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(255, 255, 255, 0.8)), url("images/musical-bckg.jpg");
+  background-repeat: repeat;
+}
+body #home .title {
+  color: #ec5242;
+}
+body #home h3 {
+  font-weight: 500;
+}
+body #home h1 {
+  font-weight: 1000;
+  mix-blend-mode: multiply;
+  line-height: 1;
+}
+body #home .lead {
+  margin: 5% 0 5% 0;
+  font-weight: 400;
+}
+body #home .date {
+  font-weight: 790;
+  color: #4a4848;
+}
+body footer {
+  height: 10vh;
+  padding: 1% 3%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
+}
+body footer img {
+  height: 100%;
+}
+body footer p {
+  text-align: end;
+  font-size: 0.8rem;
+  margin: 0;
+}
+body #partners {
+  padding: 8% 5% 5% 5%;
+  text-align: center;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(222, 218, 218, 0.9137254902)), url("images/musical-bckg.jpg");
+  background-repeat: repeat;
+}
+body #partners h3 {
+  font-weight: 800;
+  color: #4a4848;
+}
+body #partners img {
+  margin: 2%;
+}
+body #partners #versailles {
+  width: 60vw;
+}
+body #partners #europe {
+  width: 40vw;
+}
+body #partners #radio {
+  width: 40vw;
+}
+body #partners #paris {
+  width: 20vw;
+}
+body #partners #classique {
+  width: 30vw;
+}
+body #itinerary {
+  background-color: rgba(39, 42, 49, 0.8901960784);
+  padding: 5% 0 3% 0;
+}
+body #itinerary h3 {
+  color: #fff;
+  font-weight: 400;
+  padding: 10% 0 10% 0;
+}
+body #itinerary .card {
+  background-color: rgba(255, 255, 255, 0.1098039216);
+  width: 98%;
+  height: 40%;
+  margin: 1vw 0 1vw 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3%;
+}
+body #itinerary .card img {
+  width: 20%;
+  height: 20%;
+  background-color: #d3d3d3;
+  border-radius: 3px;
+  box-shadow: -10px 0 3px -5px #ec5242;
+}
+body #itinerary .card .card-title {
+  color: #ec5242;
+  font-weight: 800;
+  padding: 0 2% 0 2%;
+  text-align: center;
+}
+body #itinerary .card .card-text {
+  color: #fff;
+  text-align: start;
+  font-weight: 500;
+}
+body #itinerary a {
+  margin: 10% 0 5% 0;
+  display: flex;
+  justify-content: center;
+}
+body #itinerary a h3 {
+  background-color: #ec5242;
+  height: 10%;
+  padding: 4%;
+  width: 200px;
+}
+body #artists {
+  padding: 5% 2%;
+}
+body #artists h4 {
+  font-weight: 700;
+  margin: 7% auto;
+}
+body #artists .card {
+  display: flex;
+  flex-direction: row;
+}
+body #artists .card img {
+  width: 50%;
+  height: 100%;
+  align-self: center;
+}
+body #artists .card .card-body {
+  padding-bottom: 0;
+}
+body #artists .card .card-body .card-title {
+  font-weight: 600;
+}
+body #artists .card .card-body .intro {
+  color: #ec5242;
+  margin: 0;
+}
+body #artists .card .card-body .card-text {
+  font-size: 12px;
+}
+body #artists a {
+  margin: 5% auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+body #artists a h3 {
+  color: rgba(39, 42, 49, 0.8901960784);
+  font-size: 1rem;
+  height: 5px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  body nav .navbar-collapse {
+    padding-left: 10%;
+    padding-right: 15%;
+  }
+  body nav img {
+    float: none;
+    width: 25%;
+    height: 25%;
+  }
+  body nav li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: auto 2%;
+  }
+  body #home {
+    padding: 10% 20% 2% 10%;
+  }
+  body #home h3 {
+    font-size: 4rem;
+  }
+  body #home h1 {
+    font-size: 5.9rem;
+  }
+  body #home .lead {
+    text-shadow: 1px 1px 20px rgba(39, 42, 49, 0.8901960784);
+    font-size: 1.4rem;
+    padding-right: 15%;
+  }
+  body #home .date {
+    font-size: 3.4rem;
+  }
+  body #home h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  body #artists {
+    padding: 2% 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body #artists h4 {
+    margin: 5% 40%;
+    font-size: 2rem;
+  }
+  body #artists .card {
+    max-width: 35%;
+    margin: 0.5%;
+    box-shadow: 0 0 10px 3px rgba(101, 97, 97, 0.3882352941);
+  }
+  body #artists .card .card-body .card-title {
+    font-size: 1.5rem;
+  }
+  body #artists .card .card-body .intro {
+    font-size: 1.1rem !important;
+    font-weight: 700;
+  }
+  body #artists .card .card-body .card-text {
+    font-size: 1rem;
+  }
+  body #artists a {
+    display: none;
+  }
+  body #artists .collapse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body #partners {
+    padding: 2% 0;
+  }
+  body #partners h3 {
+    font-size: 2.5rem;
+  }
+  body #partners #versailles {
+    width: 15vw;
+  }
+  body #partners #europe {
+    width: 15vw;
+  }
+  body #partners #radio {
+    width: 13vw;
+  }
+  body #partners #paris {
+    width: 5vw;
+  }
+  body #partners #classique {
+    width: 10vw;
+  }
+  body #itinerary {
+    padding: 2% 0 1% 0;
+  }
+  body #itinerary h3 {
+    padding: 2% 0;
+  }
+  body #itinerary .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.2%;
+  }
+  body #itinerary .card-container .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    height: 300px;
+    width: 250px;
+  }
+  body #itinerary .card-container .card img {
+    width: 50%;
+    height: 40%;
+  }
+  body #itinerary .card-container .card .card-title {
+    font-weight: 800;
+    padding: 0;
+    margin: 6% auto;
+  }
+  body #itinerary a h3 {
+    background-color: inherit;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    word-spacing: 7px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 7px;
+  }
+  body footer {
+    height: 10vh;
+    padding: 0;
+  }
+  body footer p {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
