@@ -39,22 +39,28 @@
           /></a>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle"
+                aria-expanded="false"
+                href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Tickets</a>
+              <a class="nav-link" href="#artists-a">Artists</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Artist</a>
+              <a class="nav-link" href="#itinerary-a">Itinerary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Itinerary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">News</a>
+              <a class="nav-link" href="#partners">Partners</a>
             </li>
           </ul>
         </div>
@@ -72,7 +78,7 @@
           for an unforgettable celebration of culture, diversity, and music!
         </p>
         <h3 class="display-6 date">2023.06.15(THU) ~ 16(FRI)</h3>
-        <h5>@ Château de Versailles, Cour d'Honneur.</h5>
+        <h5 id="itinerary-a">@ Château de Versailles, Cour d'Honneur.</h5>
       </section>
       <section id="itinerary">
         <h3 class="display-5 text-center">Festival Itinerary</h3>
@@ -130,7 +136,7 @@
             </p>
           </div>
         </div>
-        <a><h3 class="text-center">Get the tickets!</h3></a>
+        <a id="artists-a"><h3 class="text-center">Get the tickets!</h3></a>
       </section>
       <section id="artists">
         <h4 class="text-center">Featured Artists</h4>
@@ -162,7 +168,7 @@
           data-bs-target="#collapse"
           aria-expanded="false"
           aria-controls="collapse"
-          ><h3 class="text-center">See More</h3>
+          ><h3 class="text-center see">See More</h3>
         </a>
         <div class="collapse" id="collapse">
           <div class="artist card">
