@@ -1,0 +1,226 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+body nav {
+  box-shadow: 0px 0px 30px 3px rgba(101, 97, 97, 0.3882352941);
+}
+body nav img {
+  height: 30%;
+  width: 30%;
+  float: right;
+}
+body nav li {
+  text-align: left;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+body #home {
+  padding: 10% 5% 5% 5%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(255, 255, 255, 0.8)), url("images/musical-bckg.jpg");
+  background-repeat: repeat;
+}
+body #home h1 {
+  color: #ec5242;
+  font-weight: 1000;
+  mix-blend-mode: multiply;
+  line-height: 1;
+}
+body #home p {
+  margin: 15% auto;
+  font-weight: 320;
+  color: #0d0d0e;
+}
+body #home .desktop {
+  display: none;
+}
+body #home h6 {
+  font-weight: 800;
+}
+body #home h6 a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+body #logo {
+  padding: 10% 5% 5% 5%;
+}
+body #logo h2 {
+  font-weight: 700;
+  margin: 10%;
+  color: #0d0d0e;
+}
+body #logo p {
+  font-weight: 800;
+  color: #4a4848;
+}
+body #logo img {
+  width: 70%;
+  border: 3px solid #ec5242;
+  border-radius: 5px;
+}
+body #previous {
+  padding: 10% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #previous h2 {
+  color: #0d0d0e;
+  margin: 2% auto;
+}
+body #previous p {
+  margin: 10% auto 15% auto;
+}
+body #previous .card {
+  margin: 4% auto;
+  width: 95%;
+  height: 30vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #previous .card h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+body #previous .card h6 {
+  font-weight: 400;
+}
+body #previous .brussels {
+  background-image: url("images/brussels.jpg");
+  background-color: rgba(255, 0, 0, 0.595);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #previous .montreal {
+  background-image: url("images/montreal.jpg");
+  background-color: rgba(255, 0, 0, 0.595);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #partners {
+  padding: 10% 5% 5% 5%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9254901961), rgba(222, 218, 218, 0.9137254902)), url("images/musical-bckg.jpg");
+  background-repeat: repeat;
+}
+body #partners h3 {
+  font-weight: 800;
+  color: #4a4848;
+}
+body #partners img {
+  margin: 2%;
+}
+body #partners #versailles {
+  width: 60vw;
+}
+body #partners #europe {
+  width: 40vw;
+}
+body #partners #radio {
+  width: 40vw;
+}
+body #partners #paris {
+  width: 20vw;
+}
+body #partners #classique {
+  width: 30vw;
+}
+body footer {
+  height: 10vh;
+  padding: 2% 3%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 30px 3px rgba(101, 97, 97, 0.3882352941);
+}
+body footer img {
+  height: 100%;
+}
+body footer p {
+  text-align: end;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body nav .navbar-collapse {
+    padding-left: 0;
+    padding-right: 15%;
+  }
+  body nav img {
+    float: none;
+    width: 25%;
+    height: 25%;
+  }
+  body nav li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: auto 2%;
+  }
+  body #home {
+    padding: 10% 15% 2% 15%;
+  }
+  body #home h1 {
+    font-size: 5rem;
+    margin-bottom: 5%;
+  }
+  body #home .lead {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #fff;
+  }
+  body #home .desktop {
+    display: inline-block;
+  }
+  body #home h6 {
+    margin: 8% auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 20%;
+  }
+  body #home h6 a {
+    font-weight: 900;
+  }
+  body #logo h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  body #logo p {
+    font-size: 1.3rem;
+    padding: 5% 10%;
+  }
+  body #logo img {
+    width: 30%;
+  }
+  body #previous {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body #previous h2 {
+    font-weight: 600;
+    margin: 0 30%;
+  }
+  body #previous p {
+    margin: 2% 30%;
+    font-size: 1.4rem;
+  }
+  body #previous .card {
+    width: 30vw;
+    height: 40vh;
+    margin: 2%;
+  }
+  body #previous .card h2 {
+    font-size: 2.7rem;
+  }
+  body #previous .card h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 3%;
+  }
+}/*# sourceMappingURL=about.css.map */
