@@ -3,12 +3,6 @@ body {
   text-align: center;
   scroll-behavior: smooth;
 }
-body .top {
-  display: none;
-}
-body .top img {
-  height: 2px;
-}
 body nav {
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
 }
@@ -42,6 +36,12 @@ body footer p {
   text-align: end;
   font-size: 0.8rem;
   margin: 0;
+}
+body .top {
+  display: none;
+}
+body .top img {
+  height: 2px;
 }
 body #home {
   padding: 8% 5% 5% 5%;
@@ -136,6 +136,34 @@ body #previous .montreal {
 }
 
 @media only screen and (min-width: 768px) {
+  body nav {
+    margin-top: 4vh;
+    z-index: 2 !important;
+  }
+  body nav .navbar-collapse {
+    padding-left: 0;
+    padding-right: 15%;
+  }
+  body nav img {
+    float: none;
+    width: 20%;
+    height: 20%;
+  }
+  body nav li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: auto 2%;
+  }
+  body footer {
+    height: 25vh;
+    padding: 0;
+  }
+  body footer img {
+    height: 80%;
+  }
+  body footer p {
+    font-size: 1.2rem;
+  }
   body .top {
     width: 100%;
     position: fixed;
@@ -156,24 +184,6 @@ body #previous .montreal {
   body .top a {
     text-decoration: none;
     color: #fff;
-  }
-  body nav {
-    margin-top: 4vh;
-    z-index: 2 !important;
-  }
-  body nav .navbar-collapse {
-    padding-left: 0;
-    padding-right: 15%;
-  }
-  body nav img {
-    float: none;
-    width: 20%;
-    height: 20%;
-  }
-  body nav li {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: auto 2%;
   }
   body #home {
     padding: 10% 15% 2% 15%;
@@ -199,16 +209,6 @@ body #previous .montreal {
   }
   body #home h6 a {
     font-weight: 900;
-  }
-  body footer {
-    height: 25vh;
-    padding: 0;
-  }
-  body footer img {
-    height: 80%;
-  }
-  body footer p {
-    font-size: 1.2rem;
   }
   body #logo h2 {
     font-size: 2.5rem;

@@ -4,12 +4,7 @@ body {
   font-family: "Lato", sans-serif;
   text-align: center;
   scroll-behavior: smooth;
-  .top {
-    display: none;
-    img {
-      height: 2px;
-    }
-  }
+
   nav {
     -webkit-box-shadow: 0 0 30px 3px #6a69696d;
     box-shadow: 0 0 30px 3px #65616163;
@@ -53,9 +48,18 @@ body {
     }
   }
 
+  .top {
+    display: none;
+
+    img {
+      height: 2px;
+    }
+  }
+
   #home {
     padding: $s-p;
-    background-image: radial-gradient(#ffffffec, #fffc),
+    background-image:
+      radial-gradient(#ffffffec, #fffc),
       url("images/musical-bckg.jpg");
     background-repeat: repeat;
 
@@ -168,30 +172,10 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    .top {
-      width: 100%;
-      position: fixed;
-      background-color: $black;
-      top: 0;
-      left: 0;
-      z-index: 99;
-      height: 4vh;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      padding: 0 15%;
-      gap: 2%;
-      img {
-        height: 70%;
-      }
-      a {
-        text-decoration: none;
-        color: $white;
-      }
-    }
     nav {
       margin-top: 4vh;
       z-index: 2 !important;
+
       .navbar-collapse {
         padding-left: 0;
         padding-right: 15%;
@@ -207,6 +191,43 @@ body {
         font-size: 1.5rem;
         font-weight: 400;
         margin: auto 2%;
+      }
+    }
+
+    footer {
+      height: 25vh;
+      padding: 0;
+
+      img {
+        height: 80%;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .top {
+      width: 100%;
+      position: fixed;
+      background-color: $black;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      height: 4vh;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 0 15%;
+      gap: 2%;
+
+      img {
+        height: 70%;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
       }
     }
 
@@ -238,17 +259,6 @@ body {
         a {
           font-weight: 900;
         }
-      }
-    }
-
-    footer {
-      height: 25vh;
-      padding: 0;
-img {
-  height: 80%;
-}
-      p {
-        font-size: 1.2rem;
       }
     }
 

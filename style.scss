@@ -1,16 +1,12 @@
 @import "_variables";
 
 body {
-  font-family: "Lato", sansd-serif;
-  .top {
-    display: none;
-    img {
-      height: 2px;
-    }
-  }
+  font-family: "Lato", sans-serif;
+
   nav {
     -webkit-box-shadow: 0 0 30px 3px #6a69696d;
     box-shadow: 0 0 30px 3px #65616163;
+
     img {
       height: 30%;
       width: 30%;
@@ -31,7 +27,8 @@ body {
 
   #home {
     padding: 20% 5% 20% 5%;
-    background-image: radial-gradient(#ffffffec, #fffc),
+    background-image:
+      radial-gradient(#ffffffec, #fffc),
       url("images/musical-bckg.jpg");
     background-repeat: repeat;
 
@@ -80,10 +77,19 @@ body {
     }
   }
 
+  .top {
+    display: none;
+
+    img {
+      height: 2px;
+    }
+  }
+
   #partners {
     padding: $s-p;
     text-align: center;
     background-color: $black;
+
     h3 {
       font-weight: 800;
       color: $gray;
@@ -224,30 +230,10 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    .top {
-      width: 100%;
-      position: fixed;
-      background-color: $black;
-      top: 0;
-      left: 0;
-      z-index: 99;
-      height: 4vh;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      padding: 0 15%;
-      gap: 2%;
-      img {
-        height: 70%;
-      }
-      a {
-        text-decoration: none;
-        color: $white;
-      }
-    }
     nav {
       margin-top: 4vh;
       z-index: 2 !important;
+
       .navbar-collapse {
         padding-left: 10%;
         padding-right: 15%;
@@ -263,6 +249,30 @@ body {
         font-size: 1.5rem;
         font-weight: 400;
         margin: auto 2%;
+      }
+    }
+
+    .top {
+      width: 100%;
+      position: fixed;
+      background-color: $black;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      height: 4vh;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 0 15%;
+      gap: 2%;
+
+      img {
+        height: 70%;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
       }
     }
 

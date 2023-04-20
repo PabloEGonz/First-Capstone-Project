@@ -1,11 +1,5 @@
 body {
-  font-family: "Lato", sansd-serif;
-}
-body .top {
-  display: none;
-}
-body .top img {
-  height: 2px;
+  font-family: "Lato", sans-serif;
 }
 body nav {
   box-shadow: 0 0 30px 3px rgba(101, 97, 97, 0.3882352941);
@@ -63,6 +57,12 @@ body footer p {
   text-align: end;
   font-size: 0.8rem;
   margin: 0;
+}
+body .top {
+  display: none;
+}
+body .top img {
+  height: 2px;
 }
 body #partners {
   padding: 8% 5% 5% 5%;
@@ -182,6 +182,24 @@ body #artists a h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  body nav {
+    margin-top: 4vh;
+    z-index: 2 !important;
+  }
+  body nav .navbar-collapse {
+    padding-left: 10%;
+    padding-right: 15%;
+  }
+  body nav img {
+    float: none;
+    width: 20%;
+    height: 20%;
+  }
+  body nav li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: auto 2%;
+  }
   body .top {
     width: 100%;
     position: fixed;
@@ -202,24 +220,6 @@ body #artists a h3 {
   body .top a {
     text-decoration: none;
     color: #fff;
-  }
-  body nav {
-    margin-top: 4vh;
-    z-index: 2 !important;
-  }
-  body nav .navbar-collapse {
-    padding-left: 10%;
-    padding-right: 15%;
-  }
-  body nav img {
-    float: none;
-    width: 20%;
-    height: 20%;
-  }
-  body nav li {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: auto 2%;
   }
   body #home {
     padding: 10% 20% 2% 10%;
