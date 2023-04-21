@@ -32,9 +32,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 My Portafolio Project <a name="about-project"></a>
+# 📖 My First Capstone Project <a name="about-project"></a>
 
-My portafolio with information about me and my abilities.
+This is a website about a festival taking place in Paris, France.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@ My portafolio with information about me and my abilities.
 
 > You can find the Live demo at:
 
--
+- https://pabloegonz.github.io/First-Capstone-Project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +76,7 @@ My portafolio with information about me and my abilities.
 
 > You can find the video walkthrough at:
 
--
+- https://www.loom.com/share/44ac714f40eb495a95bbf703d36d8187
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,8 +134,7 @@ Open index.html using live server extention.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ]
-- [ ]
+- [ ] Tickets section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
